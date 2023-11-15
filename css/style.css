@@ -1,0 +1,145 @@
+  @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+body{
+    background-image: url(../Images/bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    font-family: 'Kaushan Script', cursive;
+    overflow: hidden;
+    width: 100%;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+.classHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    padding: 0 100px;
+    position: fixed;
+    color: #fff;
+    z-index: 9999;
+  }
+  nav a {
+    text-decoration: none;
+    width: 100%;
+    margin-right: 40px;
+    font-size: 18px;
+    color: #fff;
+    transition: ease 0.25s;
+  }
+  nav a:hover {
+    color: darkgoldenrod;
+    font-size: 22px;
+  }
+  .container{
+    position: relative;
+  }
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 430px;
+  margin-left: 20px;
+  
+  transform: translate(-50%, -50%);
+  text-align: center;
+} 
+.content .mid{
+    margin: 50px 0;
+}
+.content h4{
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+.content .btn{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+
+}
+.search-icon {
+  cursor: pointer;
+}
+.search-input {
+  display: none;
+}
+
+.search-icon.active .label {
+  display: none;
+}
+.search-icon.active .search-input {
+  display: inline-block;
+}
+
+
+@media (min-width:400px) and (max-width:700px){
+
+ 
+  .classHeader {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  nav {
+    margin-top: -40px;
+  }
+
+  nav a {
+    margin: 0 10px;
+  }
+
+  .logo img {
+    margin-bottom: 15px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .container {
+    padding: 30px;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+}
+
+ 
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);   
+}
+
+.contact-form {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:rgba(255, 255, 255, 0.2);
+  padding: 150px;
+  z-index: 1;
+  border-radius: 50px;
+}
+.modal-body img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
